@@ -7,5 +7,6 @@ SET( ALSA_SRCS
 	)
 	
 ADD_LIBRARY( BabelWires_Alsa ${ALSA_SRCS} )
-TARGET_INCLUDE_DIRECTORIES( BabelWires_Alsa PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../.. )
+# TODO: Shouldn't assume hierarchy
+TARGET_INCLUDE_DIRECTORIES( BabelWires_Alsa PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../BabelWires )
 TARGET_LINK_LIBRARIES(BabelWires_Alsa asound)

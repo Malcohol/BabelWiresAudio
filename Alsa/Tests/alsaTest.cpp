@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "Audio/Alsa/alsaAudioInterface.hpp"
-#include "Audio/Alsa/alsaInit.hpp"
+#include "BabelWiresAudio/Alsa/Source/alsaAudioInterface.hpp"
+#include "BabelWiresAudio/Alsa/Source/alsaInit.hpp"
 #include "Common/Audio/audioDest.hpp"
 #include "Common/Audio/audioInterface.hpp"
 #include "Common/Audio/audioSource.hpp"

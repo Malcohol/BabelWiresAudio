@@ -6,11 +6,12 @@
  * Licensed under the GPLv3.0. See LICENSE file.
  **/
 
-#include "Audio/Alsa/alsaAudioDest.hpp"
+#include "BabelWiresAudio/Alsa/Source/alsaAudioDest.hpp"
+
+#include "BabelWiresAudio/Alsa/Source/alsaCommon.hpp"
 #include "Common/exceptions.hpp"
 #include "Common/types.hpp"
 
-#include "Audio/Alsa/alsaCommon.hpp"
 #include <alsa/asoundlib.h>
 
 #include <sstream>

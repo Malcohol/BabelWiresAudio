@@ -6,11 +6,11 @@
  * Licensed under the GPLv3.0. See LICENSE file.
  **/
 
-#include "Audio/Alsa/alsaInit.hpp"
+#include "BabelWiresAudio/Alsa/Source/alsaInit.hpp"
 
-#include "Audio/Alsa/alsaAudioInterface.hpp"
+#include "BabelWiresAudio/Alsa/Source/alsaAudioInterface.hpp"
 
-#include "Common/Audio/audioInterface.hpp"
+#include "BabelWires/Common/Audio/audioInterface.hpp"
 
 void babelwires_alsa::init_audio(babelwires::AudioInterfaceRegistry& registry) {
     registry.addEntry(std::make_unique<AlsaAudioInterface>());
