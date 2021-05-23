@@ -14,8 +14,6 @@ namespace babelwires {
 
 namespace babelwires_alsa {
 
-    // TODO: Could this use the same shape as the "libRegistration" files in other libs?
-
     void init_audio(babelwires::AudioInterfaceRegistry& registry);
 
     void shutdown_audio(babelwires::AudioInterfaceRegistry& registry);
