@@ -10,7 +10,7 @@
 
 #include "BabelWiresAudio/Alsa/Source/alsaAudioInterface.hpp"
 
-#include "BabelWires/Common/Audio/audioInterface.hpp"
+#include "BabelWiresLib/Common/Audio/audioInterface.hpp"
 
 void babelwires_alsa::init_audio(babelwires::AudioInterfaceRegistry& registry) {
     registry.addEntry(std::make_unique<AlsaAudioInterface>());
