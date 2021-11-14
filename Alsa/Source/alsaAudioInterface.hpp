@@ -16,7 +16,7 @@ namespace babelwires_alsa {
     class AlsaAudioInterface : public babelwires::AudioInterface {
       public:
         AlsaAudioInterface();
-        static const std::string getThisIdentifier();
+        static babelwires::LongIdentifier getThisIdentifier();
 
         virtual std::vector<std::string> getDestinationNames() const override;
         virtual std::unique_ptr<babelwires::AudioDest> getDestination(std::string_view destinationName) const override;

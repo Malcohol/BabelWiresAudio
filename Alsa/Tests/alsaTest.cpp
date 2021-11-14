@@ -2,9 +2,13 @@
 
 #include "BabelWiresAudio/Alsa/Source/alsaAudioInterface.hpp"
 #include "BabelWiresAudio/Alsa/Source/alsaInit.hpp"
+
 #include "Common/Audio/audioDest.hpp"
 #include "Common/Audio/audioInterface.hpp"
 #include "Common/Audio/audioSource.hpp"
+#include "Common/Identifiers/identifierRegistry.hpp"
+
+#include "Tests/TestUtils/testLog.hpp"
 
 #include <array>
 #include <numeric>
@@ -14,6 +18,8 @@ struct AlsaTest : public ::testing::Test {
 
     void TearDown() override { babelwires_alsa::shutdown_audio(m_audioReg); }
 
+    testUtils::TestLog m_log;
+    babelwires::IdentifierRegistryScope m_identifierRegistry;
     babelwires::AudioInterfaceRegistry m_audioReg;
 };
 

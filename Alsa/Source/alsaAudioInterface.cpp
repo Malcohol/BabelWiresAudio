@@ -10,18 +10,16 @@
 #include "BabelWiresAudio/Alsa/Source/alsaAudioDest.hpp"
 #include "BabelWiresAudio/Alsa/Source/alsaAudioSource.hpp"
 #include "BabelWiresAudio/Alsa/Source/alsaCommon.hpp"
+
+#include "Common/Identifiers/registeredIdentifier.hpp"
+
 #include <alsa/asoundlib.h>
 
-namespace {
-    const char s_identifier[] = "Alsa";
-    const char s_name[] = "Alsa";
-} // namespace
-
 babelwires_alsa::AlsaAudioInterface::AlsaAudioInterface()
-    : babelwires::AudioInterface(s_identifier, s_name, 1) {}
+    : babelwires::AudioInterface(REGISTERED_LONGID("Alsa", "Alsa", "5c7e28b1-726d-4564-82dd-33a168ffab5a"), 1) {}
 
-const std::string babelwires_alsa::AlsaAudioInterface::getThisIdentifier() {
-    return s_identifier;
+babelwires::LongIdentifier babelwires_alsa::AlsaAudioInterface::getThisIdentifier() {
+    return "Alsa";
 }
 
 namespace {
