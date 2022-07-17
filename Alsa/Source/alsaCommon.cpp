@@ -6,9 +6,9 @@
  * Licensed under the GPLv3.0. See LICENSE file.
  **/
 
-#include "BabelWiresAudio/Alsa/Source/alsaCommon.hpp"
+#include <BabelWiresAudio/Alsa/Source/alsaCommon.hpp>
 
-#include "Common/exceptions.hpp"
+#include <Common/exceptions.hpp>
 
 babelwires_alsa::HardwareParameters::HardwareParameters() {
     const int ret = snd_pcm_hw_params_malloc(&m_params);

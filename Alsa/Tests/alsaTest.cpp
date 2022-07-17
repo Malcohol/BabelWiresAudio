@@ -1,14 +1,14 @@
 #include <gtest/gtest.h>
 
-#include "BabelWiresAudio/Alsa/Source/alsaAudioInterface.hpp"
-#include "BabelWiresAudio/Alsa/Source/alsaInit.hpp"
+#include <BabelWiresAudio/Alsa/Source/alsaAudioInterface.hpp>
+#include <BabelWiresAudio/Alsa/Source/alsaInit.hpp>
 
-#include "Common/Audio/audioDest.hpp"
-#include "Common/Audio/audioInterface.hpp"
-#include "Common/Audio/audioSource.hpp"
-#include "Common/Identifiers/identifierRegistry.hpp"
+#include <Common/Audio/audioDest.hpp>
+#include <Common/Audio/audioInterface.hpp>
+#include <Common/Audio/audioSource.hpp>
+#include <Common/Identifiers/identifierRegistry.hpp>
 
-#include "Tests/TestUtils/testLog.hpp"
+#include <Tests/TestUtils/testLog.hpp>
 
 #include <array>
 #include <numeric>

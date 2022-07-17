@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "Common/Audio/audioInterface.hpp"
+#include <Common/Audio/audioInterface.hpp>
 
 namespace babelwires_alsa {
 

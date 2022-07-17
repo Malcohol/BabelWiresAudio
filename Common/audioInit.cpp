@@ -5,9 +5,9 @@
  * 
  * Licensed under the GPLv3.0. See LICENSE file.
  **/
-#include "BabelWiresAudio/Common/audioInit.hpp"
+#include <BabelWiresAudio/Common/audioInit.hpp>
 
-#include "BabelWiresAudio/Alsa/Source/alsaInit.hpp"
+#include <BabelWiresAudio/Alsa/Source/alsaInit.hpp>
 
 void babelwires::init_audio(AudioInterfaceRegistry& registry) {
     #ifdef BABELWIRES_AUDIO_ALSA
