@@ -13,7 +13,7 @@
 #include <Common/Audio/audioInterface.hpp>
 
 void babelwires_alsa::init_audio(babelwires::AudioInterfaceRegistry& registry) {
-    registry.addEntry(std::make_unique<AlsaAudioInterface>());
+    registry.addEntry<AlsaAudioInterface>();
 }
 
 void babelwires_alsa::shutdown_audio(babelwires::AudioInterfaceRegistry& registry) {}
