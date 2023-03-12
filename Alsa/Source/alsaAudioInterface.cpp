@@ -19,7 +19,7 @@
 babelwires_alsa::AlsaAudioInterface::AlsaAudioInterface()
     : babelwires::AudioInterface(REGISTERED_LONGID("Alsa", "Alsa", "5c7e28b1-726d-4564-82dd-33a168ffab5a"), 1) {}
 
-babelwires::LongIdentifier babelwires_alsa::AlsaAudioInterface::getThisIdentifier() {
+babelwires::LongId babelwires_alsa::AlsaAudioInterface::getThisIdentifier() {
     return "Alsa";
 }
 
