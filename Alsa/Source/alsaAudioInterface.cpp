@@ -17,7 +17,7 @@
 #include <alsa/asoundlib.h>
 
 babelwires_alsa::AlsaAudioInterface::AlsaAudioInterface()
-    : babelwires::AudioInterface(REGISTERED_LONGID("Alsa", "Alsa", "5c7e28b1-726d-4564-82dd-33a168ffab5a"), 1) {}
+    : babelwires::AudioInterface(BW_LONG_ID("Alsa", "Alsa", "5c7e28b1-726d-4564-82dd-33a168ffab5a"), 1) {}
 
 babelwires::LongId babelwires_alsa::AlsaAudioInterface::getThisIdentifier() {
     return "Alsa";
